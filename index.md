@@ -1,6 +1,15 @@
+<p align="center">
+  <img src="IMG_0157.HEIC" width="180"/>
+</p>
 
-**Associate Professor**  
+<h2 align="center">Duygu İçen</h2>
+
+<p align="center">
+<strong>Associate Professor</strong><br>
 Department of Statistics, Hacettepe University
+</p>
+
+---
 
 I am an academic specializing in data mining, fuzzy regression, and decision tree methodologies. My research focuses on developing novel fuzzy modeling approaches to handle uncertainty in statistical learning and real-world data applications.
 
@@ -58,7 +67,7 @@ I am currently an Associate Professor in the Department of Statistics at Hacette
 ---
 
 ## Academic Profiles
-- 💻 GitHub: https://github.com/dygicn
+- 💻 GitHub: https://github.com/dygicn  
 
 ---
 
