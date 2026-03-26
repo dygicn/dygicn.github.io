@@ -1,12 +1,18 @@
 <p align="center">
-  <img src="IMG_0157.HEIC" width="180"/>
+  <img src="IMG_0157.HEIC" width="180" style="border-radius: 50%;"/>
 </p>
 
-<h2 align="center">Duygu İçen</h2>
+<p align="center">
+<strong style="font-size:28px;">Duygu İçen</strong>
+</p>
 
 <p align="center">
 <strong>Associate Professor</strong><br>
 Department of Statistics, Hacettepe University
+</p>
+
+<p align="center">
+<i>Data Mining • Fuzzy Regression • Decision Trees • Machine Learning</i>
 </p>
 
 ---
@@ -23,12 +29,12 @@ I am currently an Associate Professor in the Department of Statistics at Hacette
 ---
 
 ## Research Interests
-- Fuzzy Regression
-- Decision Trees
-- Machine Learning
-- Data Mining
-- Bayesian Methods
-- Remote Sensing Applications
+- Fuzzy Regression  
+- Decision Trees  
+- Machine Learning  
+- Data Mining  
+- Bayesian Methods  
+- Remote Sensing Applications  
 
 ---
 
@@ -67,7 +73,7 @@ I am currently an Associate Professor in the Department of Statistics at Hacette
 ---
 
 ## Academic Profiles
-- 💻 GitHub: https://github.com/dygicn  
+- 💻 GitHub: [github.com/dygicn](https://github.com/dygicn)  
 
 ---
 
