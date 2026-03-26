@@ -1,4 +1,3 @@
-# Duygu İcen
 
 **Associate Professor**  
 Department of Statistics, Hacettepe University
