@@ -1,9 +1,11 @@
 <p align="center">
-  <img src="IMG_0157.HEIC" width="200"/>
+  <img src="IMG_0157.HEIC" width="180"/>
 </p>
 
+<br>
+
 <p align="center">
-<strong style="font-size:28px;">Duygu İçen</strong>
+<strong style="font-size:30px;">Duygu İçen</strong>
 </p>
 
 <p align="center">
@@ -22,7 +24,7 @@ I am an academic specializing in data mining, fuzzy regression, and decision tre
 ---
 
 ## About Me
-I received my PhD in Statistics from Hacettepe University in 2015. My doctoral research focused on fuzzy regression analysis using Monte Carlo methods and expert systems.
+I received my PhD in Statistics from Hacettepe University in 2015. My doctoral research focuses on fuzzy regression analysis using Monte Carlo methods and expert systems.
 
 I am currently an Associate Professor in the Department of Statistics at Hacettepe University.
 
