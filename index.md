@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="IMG_0157.HEIC" width="180" style="border-radius: 50%;"/>
+  <img src="IMG_0157.HEIC" width="200"/>
 </p>
 
 <p align="center">
