@@ -2,213 +2,127 @@
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Duygu İçen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Duygu İçen</title>
 
-  <!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f7f7;
+}
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f7f7f7;
-      color: #222;
-    }
+.menu {
+  background: white;
+  padding: 15px 40px;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+}
 
-    .menu {
-      background: white;
-      padding: 15px 40px;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
+.menu a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
 
-    .menu a {
-      margin-right: 20px;
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-    }
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
 
-    .menu a:hover {
-      color: #0366d6;
-    }
+.sidebar {
+  width: 300px;
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  min-height: 100vh;
+}
 
-    .container {
-      display: flex;
-      max-width: 1200px;
-      margin: auto;
-    }
+.sidebar img {
+  width: 180px;
+}
 
-    /* SIDEBAR */
-    .sidebar {
-      width: 300px;
-      background: white;
-      padding: 30px;
-      text-align: center;
-      border-right: 1px solid #ddd;
-      min-height: 100vh;
-      position: sticky;
-      top: 60px;
-    }
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
 
-    .sidebar img {
-      width: 180px;
-      height: auto;
-      border-radius: 0;
-      margin-bottom: 10px;
-    }
+.social-icons a {
+  font-size: 24px;
+}
 
-    .sidebar h1 {
-      font-size: 22px;
-      margin: 10px 0 5px;
-    }
+.social-icons a:nth-child(1){color:#2e7d32;}
+.social-icons a:nth-child(2){color:#0077b5;}
+.social-icons a:nth-child(3){color:#00ccbb;}
+.social-icons a:nth-child(4){color:#5c6bc0;}
+.social-icons a:nth-child(5){color:#a6ce39;}
+.social-icons a:nth-child(6){color:#c62828;}
+.social-icons a:nth-child(7){color:#8e24aa;}
 
-    .sidebar p {
-      font-size: 14px;
-      color: #555;
-      margin: 3px 0;
-    }
+.content {
+  flex: 1;
+  padding: 40px;
+}
 
-    .keywords {
-      font-size: 13px;
-      color: #777;
-      margin-top: 10px;
-    }
-
-    /* SOCIAL ICONS */
-    .social-icons {
-      margin-top: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 14px;
-    }
-
-    .social-icons a {
-      font-size: 24px;
-      transition: 0.3s;
-    }
-
-    .social-icons a:nth-child(1) { color: #2e7d32; }
-    .social-icons a:nth-child(2) { color: #0077b5; }
-    .social-icons a:nth-child(3) { color: #00ccbb; }
-    .social-icons a:nth-child(4) { color: #5c6bc0; }
-    .social-icons a:nth-child(5) { color: #a6ce39; }
-    .social-icons a:nth-child(6) { color: #c62828; }
-    .social-icons a:nth-child(7) { color: #8e24aa; }
-
-    .social-icons a:hover {
-      transform: scale(1.2);
-      opacity: 0.8;
-    }
-
-    /* CONTENT */
-    .content {
-      flex: 1;
-      padding: 40px;
-    }
-
-    h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-      margin-top: 40px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    @media (max-width: 800px) {
-      .container {
-        flex-direction: column;
-      }
-      .sidebar {
-        width: 100%;
-        height: auto;
-      }
-    }
-
-  </style>
+h2 {
+  border-bottom: 2px solid #ddd;
+}
+</style>
 
 </head>
 
 <body>
 
-  <!-- MENU -->
-
-  <div class="menu">
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="courses.html">Courses</a>
-    <a href="cv.html">CV</a>
-  </div>
-
-  <div class="container">
-
-```
-<!-- SIDEBAR -->
-<div class="sidebar">
-  <img src="IMG_0157.HEIC" alt="Duygu İçen">
-
-  <h1>Duygu İçen</h1>
-  <p><strong>Associate Professor</strong></p>
-  <p>Hacettepe University</p>
-  <p>Faculty of Science</p>
-  <p>Department of Statistics</p>
-
-  <div class="keywords">
-    Data Mining • Fuzzy Regression • Decision Trees • Machine Learning
-  </div>
-
-  <div class="social-icons">
-    <a href="https://scholar.google.com.tr/citations?user=GXXsGcMAAAAJ&hl=tr" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-    <a href="https://www.linkedin.com/in/duygu-içen-94584257/" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.researchgate.net/profile/Duygu_Icen?ev=hdr_xprf" target="_blank"><i class="fab fa-researchgate"></i></a>
-    <a href="https://www.webofscience.com/wos/author/record/E-6147-2013" target="_blank"><i class="fas fa-book"></i></a>
-    <a href="https://orcid.org/0000-0002-7940-5064" target="_blank"><i class="fab fa-orcid"></i></a>
-    <a href="https://akademik.yok.gov.tr/AkademikArama/view/viewAuthor.jsp" target="_blank"><i class="fas fa-university"></i></a>
-    <a href="https://research.hacettepe.edu.tr/en/persons/duygu-içen-11/" target="_blank"><i class="fas fa-user-graduate"></i></a>
-  </div>
+<div class="menu">
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="courses.html">Courses</a>
+  <a href="cv.html">CV</a>
 </div>
 
-<!-- CONTENT -->
+<div class="container">
+
+<div class="sidebar">
+<img src="profile.jpg">
+<h1>Duygu İçen</h1>
+<p>Associate Professor</p>
+<p>Hacettepe University</p>
+
+<div class="social-icons">
+<a href="https://scholar.google.com.tr/citations?user=GXXsGcMAAAAJ"><i class="fas fa-graduation-cap"></i></a>
+<a href="https://www.linkedin.com/in/duygu-içen-94584257/"><i class="fab fa-linkedin"></i></a>
+<a href="https://www.researchgate.net/profile/Duygu_Icen"><i class="fab fa-researchgate"></i></a>
+<a href="#"><i class="fas fa-book"></i></a>
+<a href="https://orcid.org/0000-0002-7940-5064"><i class="fab fa-orcid"></i></a>
+<a href="#"><i class="fas fa-university"></i></a>
+<a href="#"><i class="fas fa-user-graduate"></i></a>
+</div>
+</div>
+
 <div class="content">
 
-  <h2>About Me</h2>
-  <p>
-    I am an academic and researcher working at the intersection of data mining, multivariate data analysis, and big data analytics. 
-    My research focuses on regression trees, fuzzy regression modeling, and machine learning methods, 
-    with an emphasis on developing interpretable and robust approaches for complex real-world data.
-  </p>
+<h2>About Me</h2>
+<p>
+I am an academic working in data mining, machine learning, and fuzzy regression.
+</p>
 
-  <p>
-    Since 2018, I teach undergraduate and postgraduate courses in these areas, combining theoretical foundations with practical applications. 
-    I am particularly interested in research collaborations that integrate applied statistics, machine learning, and interdisciplinary problem solving.
-  </p>
-
-  <p>
-    Beyond academia, I have a strong interest in sailing and regularly participate in national and international races.
-  </p>
-
-  <h2 id="contact">Contact</h2>
-  <p>
-    Hacettepe University,<br>
-    Department of Statistics,<br>
-    06800, Beytepe<br>
-    📍 Ankara, Türkiye<br>
-    📧 duyguicn@hacettepe.edu.tr<br>
-    📧 duyguicen@gmail.com
-  </p>
+<h2>Contact</h2>
+<p>
+duyguicn@hacettepe.edu.tr
+</p>
 
 </div>
-```
 
-  </div>
-
+</div>
 </body>
 </html>
