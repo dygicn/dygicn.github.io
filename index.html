@@ -24,18 +24,13 @@
       border-bottom: 1px solid #ddd;
       position: sticky;
       top: 0;
-      z-index: 10;
     }
 
     .menu a {
       margin-right: 20px;
-      font-weight: 500;
       text-decoration: none;
       color: #333;
-    }
-
-    .menu a:hover {
-      color: #0366d6;
+      font-weight: 500;
     }
 
     .container {
@@ -59,19 +54,19 @@
     .sidebar img {
       width: 180px;
       height: auto;
-      border-radius: 0; /* foto doğal kalsın */
-      margin-bottom: 15px;
+      border-radius: 0; /* FOTO AYNI KALIR */
+      margin-bottom: 10px;
     }
 
     .sidebar h1 {
       font-size: 22px;
-      margin-bottom: 5px;
+      margin: 10px 0 5px;
     }
 
     .sidebar p {
       font-size: 14px;
       color: #555;
-      margin: 5px 0;
+      margin: 3px 0;
     }
 
     .keywords {
@@ -82,19 +77,30 @@
 
     /* SOCIAL ICONS */
     .social-icons {
-      margin-top: 15px;
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
     }
 
     .social-icons a {
-      margin: 0 10px;
-      font-size: 22px;
-      color: #444;
+      font-size: 24px;
       transition: 0.3s;
     }
 
+    /* ORİJİNAL RENKLER */
+    .social-icons a:nth-child(1) { color: #2e7d32; } /* Scholar */
+    .social-icons a:nth-child(2) { color: #0077b5; } /* LinkedIn */
+    .social-icons a:nth-child(3) { color: #00ccbb; } /* ResearchGate */
+    .social-icons a:nth-child(4) { color: #5c6bc0; } /* WoS */
+    .social-icons a:nth-child(5) { color: #a6ce39; } /* ORCID */
+    .social-icons a:nth-child(6) { color: #c62828; } /* YÖKSİS */
+    .social-icons a:nth-child(7) { color: #8e24aa; } /* Hacettepe */
+
     .social-icons a:hover {
-      color: #0366d6;
       transform: scale(1.2);
+      opacity: 0.8;
     }
 
     /* CONTENT */
@@ -113,15 +119,6 @@
       padding-left: 20px;
     }
 
-    a {
-      color: #0366d6;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
     @media (max-width: 800px) {
       .container {
         flex-direction: column;
@@ -129,7 +126,6 @@
       .sidebar {
         width: 100%;
         height: auto;
-        border-right: none;
       }
     }
 
@@ -167,53 +163,48 @@
   <!-- SOCIAL ICONS -->
   <div class="social-icons">
 
-  <a href="https://scholar.google.com.tr/citations?user=GXXsGcMAAAAJ&hl=tr" target="_blank" title="Google Scholar">
-    <i class="fas fa-graduation-cap"></i>
-  </a>
+    <a href="https://scholar.google.com.tr/citations?user=GXXsGcMAAAAJ&hl=tr" target="_blank">
+      <i class="fas fa-graduation-cap"></i>
+    </a>
 
-  <a href="https://www.linkedin.com/in/duygu-içen-94584257/" target="_blank" title="LinkedIn">
-    <i class="fab fa-linkedin"></i>
-  </a>
+    <a href="https://www.linkedin.com/in/duygu-içen-94584257/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
 
-  <a href="https://www.researchgate.net/profile/Duygu_Icen?ev=hdr_xprf" target="_blank" title="ResearchGate">
-    <i class="fab fa-researchgate"></i>
-  </a>
+    <a href="https://www.researchgate.net/profile/Duygu_Icen?ev=hdr_xprf" target="_blank">
+      <i class="fab fa-researchgate"></i>
+    </a>
 
-  <a href="https://www.webofscience.com/wos/author/record/E-6147-2013" target="_blank" title="Web of Science">
-    <i class="fas fa-book"></i>
-  </a>
+    <a href="https://www.webofscience.com/wos/author/record/E-6147-2013" target="_blank">
+      <i class="fas fa-book"></i>
+    </a>
 
-  <a href="https://orcid.org/0000-0002-7940-5064" target="_blank" title="ORCID">
-    <i class="fab fa-orcid"></i>
-  </a>
+    <a href="https://orcid.org/0000-0002-7940-5064" target="_blank">
+      <i class="fab fa-orcid"></i>
+    </a>
 
-  <a href="https://akademik.yok.gov.tr/AkademikArama/view/viewAuthor.jsp" target="_blank" title="YÖKSİS">
-    <i class="fas fa-university"></i>
-  </a>
+    <a href="https://akademik.yok.gov.tr/AkademikArama/view/viewAuthor.jsp" target="_blank">
+      <i class="fas fa-university"></i>
+    </a>
 
-  <a href="https://research.hacettepe.edu.tr/en/persons/duygu-içen-11/" target="_blank" title="Hacettepe Research">
-    <i class="fas fa-user-graduate"></i>
-  </a>
+    <a href="https://research.hacettepe.edu.tr/en/persons/duygu-içen-11/" target="_blank">
+      <i class="fas fa-user-graduate"></i>
+    </a>
 
+  </div>
 </div>
-</div>
 
-<!-- MAIN CONTENT -->
+<!-- CONTENT -->
 <div class="content">
 
   <p>
     I am an academic specializing in data mining, fuzzy regression, and decision tree methodologies.
-    My research focuses on developing novel fuzzy modeling approaches to handle uncertainty in statistical learning
-    and real-world data applications.
+    My research focuses on developing novel fuzzy modeling approaches to handle uncertainty.
   </p>
 
   <h2>About Me</h2>
   <p>
-    I received my PhD in Statistics from Hacettepe University in 2015. My doctoral research focuses on fuzzy regression
-    analysis using Monte Carlo methods and expert systems.
-  </p>
-  <p>
-    I am currently an Associate Professor in the Department of Statistics at Hacettepe University.
+    I received my PhD in Statistics from Hacettepe University in 2015.
   </p>
 
   <h2>Research Interests</h2>
@@ -222,27 +213,19 @@
     <li>Decision Trees</li>
     <li>Machine Learning</li>
     <li>Data Mining</li>
-    <li>Bayesian Methods</li>
-    <li>Remote Sensing Applications</li>
   </ul>
 
   <h2 id="research">Current Research</h2>
   <ul>
-    <li>Development of fuzzy regression tree models</li>
-    <li>Integration of Monte Carlo simulation into fuzzy modeling</li>
-    <li>Crop yield estimation using remote sensing and fuzzy regression</li>
-    <li>Handling uncertainty in machine learning models</li>
+    <li>Fuzzy regression tree models</li>
+    <li>Monte Carlo fuzzy modeling</li>
+    <li>Crop yield estimation</li>
   </ul>
 
   <h2 id="projects">Projects</h2>
   <ul>
-    <li>Statistical verification of ÖSYM exam results and anomaly detection</li>
-    <li>Analysis of gender roles using data mining methods</li>
-  </ul>
-
-  <h2>Academic Profiles</h2>
-  <ul>
-    <li><a href="https://github.com/dygicn" target="_blank">GitHub Profile</a></li>
+    <li>ÖSYM anomaly detection</li>
+    <li>Gender data mining analysis</li>
   </ul>
 
   <h2 id="contact">Contact</h2>
