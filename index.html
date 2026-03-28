@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Duygu İçen</title>
 
+  <!-- ICONS -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
       margin: 0;
@@ -14,13 +18,33 @@
       color: #222;
     }
 
+    .menu {
+      background: white;
+      padding: 15px 40px;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .menu a {
+      margin-right: 20px;
+      font-weight: 500;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .menu a:hover {
+      color: #0366d6;
+    }
+
     .container {
       display: flex;
       max-width: 1200px;
       margin: auto;
     }
 
-    /* LEFT SIDEBAR */
+    /* SIDEBAR */
     .sidebar {
       width: 300px;
       background: white;
@@ -29,16 +53,18 @@
       border-right: 1px solid #ddd;
       height: 100vh;
       position: sticky;
-      top: 0;
+      top: 60px;
     }
 
-.sidebar img {
-  width: 180px;
-  height: auto;
-  border-radius: 0;
-}
+    .sidebar img {
+      width: 180px;
+      height: auto;
+      border-radius: 0; /* foto doğal kalsın */
+      margin-bottom: 15px;
+    }
+
     .sidebar h1 {
-      font-size: 24px;
+      font-size: 22px;
       margin-bottom: 5px;
     }
 
@@ -48,13 +74,30 @@
       margin: 5px 0;
     }
 
-    .sidebar .keywords {
+    .keywords {
       font-size: 13px;
-      margin-top: 10px;
       color: #777;
+      margin-top: 10px;
     }
 
-    /* MAIN CONTENT */
+    /* SOCIAL ICONS */
+    .social-icons {
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 22px;
+      color: #444;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #0366d6;
+      transform: scale(1.2);
+    }
+
+    /* CONTENT */
     .content {
       flex: 1;
       padding: 40px;
@@ -79,21 +122,6 @@
       text-decoration: underline;
     }
 
-    /* TOP MENU */
-    .menu {
-      background: white;
-      padding: 15px 40px;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    .menu a {
-      margin-right: 20px;
-      font-weight: 500;
-    }
-
     @media (max-width: 800px) {
       .container {
         flex-direction: column;
@@ -111,6 +139,8 @@
 
 <body>
 
+  <!-- MENU -->
+
   <div class="menu">
     <a href="#">Home</a>
     <a href="#research">Research</a>
@@ -124,22 +154,62 @@
 <!-- SIDEBAR -->
 <div class="sidebar">
   <img src="IMG_0157.HEIC" alt="Duygu İçen">
+
   <h1>Duygu İçen</h1>
   <p><strong>Associate Professor</strong></p>
   <p>Hacettepe University</p>
   <p>Department of Statistics</p>
 
   <div class="keywords">
-    Data Mining • Fuzzy Regression • Decision Trees
+    Data Mining • Fuzzy Regression • Decision Trees • Machine Learning
+  </div>
+
+  <!-- SOCIAL ICONS -->
+  <div class="social-icons">
+
+    <a href="https://www.linkedin.com/in/duygu-içen-94584257/" target="_blank" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://www.researchgate.net/profile/Duygu_Icen?ev=hdr_xprf" target="_blank" title="ResearchGate">
+      <i class="fab fa-researchgate"></i>
+    </a>
+
+    <a href="https://www.webofscience.com/wos/author/record/E-6147-2013" target="_blank" title="Web of Science">
+      <i class="fas fa-book"></i>
+    </a>
+
+    <a href="https://orcid.org/0000-0002-7940-5064" target="_blank" title="ORCID">
+      <i class="fab fa-orcid"></i>
+    </a>
+
+    <a href="https://akademik.yok.gov.tr/AkademikArama/view/viewAuthor.jsp" target="_blank" title="YÖKSİS">
+      <i class="fas fa-university"></i>
+    </a>
+
+    <a href="https://research.hacettepe.edu.tr/en/persons/duygu-içen-11/" target="_blank" title="Hacettepe Research">
+      <i class="fas fa-user-graduate"></i>
+    </a>
+
   </div>
 </div>
 
-<!-- CONTENT -->
+<!-- MAIN CONTENT -->
 <div class="content">
 
   <p>
-    I am an academic specializing in data mining, fuzzy regression, and regression tree methodologies.
-    My research focuses on developing novel fuzzy modeling approaches to handle uncertainty.
+    I am an academic specializing in data mining, fuzzy regression, and decision tree methodologies.
+    My research focuses on developing novel fuzzy modeling approaches to handle uncertainty in statistical learning
+    and real-world data applications.
+  </p>
+
+  <h2>About Me</h2>
+  <p>
+    I received my PhD in Statistics from Hacettepe University in 2015. My doctoral research focuses on fuzzy regression
+    analysis using Monte Carlo methods and expert systems.
+  </p>
+  <p>
+    I am currently an Associate Professor in the Department of Statistics at Hacettepe University.
   </p>
 
   <h2>Research Interests</h2>
@@ -147,27 +217,34 @@
     <li>Fuzzy Regression</li>
     <li>Decision Trees</li>
     <li>Machine Learning</li>
-    <li>Remote Sensing</li>
+    <li>Data Mining</li>
+    <li>Bayesian Methods</li>
+    <li>Remote Sensing Applications</li>
   </ul>
 
   <h2 id="research">Current Research</h2>
   <ul>
-    <li>Fuzzy regression trees</li>
-    <li>Monte Carlo fuzzy models</li>
-    <li>Crop yield estimation</li>
+    <li>Development of fuzzy regression tree models</li>
+    <li>Integration of Monte Carlo simulation into fuzzy modeling</li>
+    <li>Crop yield estimation using remote sensing and fuzzy regression</li>
+    <li>Handling uncertainty in machine learning models</li>
   </ul>
 
+  <h2 id="projects">Projects</h2>
+  <ul>
+    <li>Statistical verification of ÖSYM exam results and anomaly detection</li>
+    <li>Analysis of gender roles using data mining methods</li>
+  </ul>
 
   <h2>Academic Profiles</h2>
-  <p>
-    GitHub: <a href="https://github.com/dygicn" target="_blank">github.com/dygicn</a>
-  </p>
+  <ul>
+    <li><a href="https://github.com/dygicn" target="_blank">GitHub Profile</a></li>
+  </ul>
 
   <h2 id="contact">Contact</h2>
   <p>
-    duyguicn@hacettepe.edu.tr<br>
-    duyguicen@gmail.com<br>
-    Ankara, Turkey
+    📧 duyguicn@hacettepe.edu.tr<br>
+    📍 Ankara, Türkiye
   </p>
 
 </div>
