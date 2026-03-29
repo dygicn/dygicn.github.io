@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Page</title>
+<title>Publications</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -25,6 +25,11 @@ body {
   margin-right: 20px;
   text-decoration: none;
   color: #333;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #0077b5;
 }
 
 .container {
@@ -42,12 +47,20 @@ body {
   min-height: 100vh;
 }
 
-.sidebar img { width: 180px; }
+.sidebar img {
+  width: 180px;
+  border-radius: 10px;
+}
 
-.keywords {
+.keywords ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.keywords li {
   font-size: 13px;
   color: #777;
-  margin-top: 10px;
 }
 
 .social-icons {
@@ -58,15 +71,9 @@ body {
   gap: 14px;
 }
 
-.social-icons a { font-size: 24px; }
-
-.social-icons a:nth-child(1){color:#2e7d32;}
-.social-icons a:nth-child(2){color:#0077b5;}
-.social-icons a:nth-child(3){color:#00ccbb;}
-.social-icons a:nth-child(4){color:#5c6bc0;}
-.social-icons a:nth-child(5){color:#a6ce39;}
-.social-icons a:nth-child(6){color:#c62828;}
-.social-icons a:nth-child(7){color:#8e24aa;}
+.social-icons a {
+  font-size: 22px;
+}
 
 .content {
   flex: 1;
@@ -75,19 +82,11 @@ body {
 
 h2 {
   border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
 }
 
-  .keywords ul {
-  list-style-position: inside;
-  padding: 0;
-  margin: 10px 0;
-  text-align: center;
-}
-
-.keywords li {
-  font-size: 13px;
-  color: #777;
-  margin-bottom: 4px;
+.pub-list li {
+  margin-bottom: 12px;
 }
 </style>
 
@@ -99,13 +98,13 @@ h2 {
   <a href="index.html">Home</a>
   <a href="research.html">Research</a>
   <a href="courses.html">Courses</a>
-  <a href="cv.html">CV</a>
+  <a href="publications.html">Publications</a>
 </div>
 
 <div class="container">
 
 <div class="sidebar">
-<img src="IMG_0157.HEIC">
+<img src="profile.jpg">
 
 <h1>Duygu İçen</h1>
 <p><strong>Associate Professor</strong></p>
@@ -120,7 +119,6 @@ h2 {
     <li>Machine Learning</li>
   </ul>
 </div>
-
 
 <div class="social-icons">
 <a href="https://scholar.google.com.tr/citations?user=GXXsGcMAAAAJ"><i class="fas fa-graduation-cap"></i></a>
@@ -137,90 +135,56 @@ h2 {
 
 <h2>Publications</h2>
 
-<h2>Publications</h2>
-  
 <p>
-Below is a selection of my recent publications (2019-2026).  
+Below is a selection of my publications.  
 For a complete list, please visit my 
 <a href="https://www.webofscience.com/wos/author/record/E-6147-2013" target="_blank">Web of Science</a> 
 and 
-<a href="https://scholar.google.com.tr/citations?user=GXXsGcMAAAAJ" target="_blank">Google Scholar</a> profiles.
+<a href="https://scholar.google.com.tr/citations?user=GXXsGcMAAAAJ" target="_blank">Google Scholar</a>.
 </p>
-
 
 <h3>2025</h3>
 <ul class="pub-list">
   <li>
     G. Charizanos, H. Demirhan, <strong>D. İçen</strong> (2025).  
     <em>Binary classification with Fuzzy-Bayesian logistic regression using Gaussian fuzzy numbers.</em>  
-    Intelligent Systems with Applications, 26, 200494.
+    Intelligent Systems with Applications.
   </li>
 </ul>
 
 <h3>2024</h3>
 <ul class="pub-list">
-
   <li>
     G. Charizanos, H. Demirhan, <strong>D. İçen</strong> (2024).  
     <em>An online fuzzy fraud detection framework for credit card transactions.</em>  
-    Expert Systems with Applications, 252, 124127.
+    Expert Systems with Applications.
   </li>
 
   <li>
     G. Charizanos, H. Demirhan, <strong>D. İçen</strong> (2024).  
-    <em>Binary classification with fuzzy logistic regression under class imbalance and complete separation in clinical studies.</em>  
-    BMC Medical Research Methodology, 24(1), 145.
+    <em>Binary classification with fuzzy logistic regression under class imbalance.</em>  
+    BMC Medical Research Methodology.
   </li>
 
   <li>
     G. Charizanos, H. Demirhan, <strong>D. İçen</strong> (2024).  
-    <em>A Monte Carlo fuzzy logistic regression framework against imbalance and separation.</em>  
-    Information Sciences, 655, 119893.
+    <em>A Monte Carlo fuzzy logistic regression framework.</em>  
+    Information Sciences.
   </li>
-
-  <li>
-    G. Charizanos, H. Demirhan, <strong>D. İçen</strong> (2024).  
-    <em>Elementary Operations on Gaussian Fuzzy Numbers for Predictive Modeling.</em>  
-    SSRN, 4997557.
-  </li>
-
-  <li>
-    G. Charizanos, H. Demirhan, <strong>D. İçen</strong> (2024).  
-    <em>Elementary operations with Gaussian fuzzy numbers.</em>  
-    SSRN Electronic Journal.
-  </li>
-
 </ul>
 
 <h3>2023</h3>
 <ul class="pub-list">
-
   <li>
-    <strong>D. İçen</strong>, A. A. Özgören, A. B. Semerci (2023).  
-    <em>Duygu ve his analizi ile uyum analizinin birlikte kullanımı: Türkiye’de annelik hakkındaki görüşlerin incelenmesi.</em>  
-    Nicel Bilimler Dergisi, 5(2), 117–134.
-  </li>
-
-  <li>
-    Ş. Demirci, <strong>D. İçen</strong> (2023).  
-    <em>Karar ağaçları ve bayes ağları ile OECD ülkelerindeki intiharların değerlendirilmesi.</em>  
-    İstanbul Gelişim Üniversitesi Sosyal Bilimler Dergisi, 10(1), 128–143.
-  </li>
-
-</ul>
-
-<h3>2022</h3>
-<ul class="pub-list">
-  <li>
-    A. B. Semerci, A. A. Özgören, <strong>D. İçen</strong> (2022).  
-    <em>Thoughts on women entrepreneurship: an application of market basket analysis with Google Trends data.</em>  
-    Soft Computing, 26(19), 10035–10047.
+    <strong>D. İçen</strong> et al. (2023).  
+    <em>Sentiment and correspondence analysis in Türkiye.</em>  
+    Nicel Bilimler Dergisi.
   </li>
 </ul>
 
+</div>
 
-
-
+</div>
 
 </body>
 </html>
