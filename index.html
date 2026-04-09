@@ -1,3 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Duygu İçen</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+.menu {
+  background: white;
+  padding: 15px 40px;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+}
+
+.menu a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  color: #0077b5;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sidebar {
+  width: 300px;
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  min-height: 100vh;
+}
+
+.sidebar img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.keywords {
+  font-size: 13px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.social-icons a { font-size: 22px; }
+
+.social-icons a:nth-child(1){color:#2e7d32;}
+.social-icons a:nth-child(2){color:#0077b5;}
+.social-icons a:nth-child(3){color:#00ccbb;}
+.social-icons a:nth-child(4){color:#5c6bc0;}
+.social-icons a:nth-child(5){color:#a6ce39;}
+.social-icons a:nth-child(6){color:#c62828;}
+.social-icons a:nth-child(7){color:#8e24aa;}
+
+.visitor-box {
+  margin-top: 25px;
+}
+
+.visitor-box h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.globe-wrapper {
+  transform: scale(0.7);
+  transform-origin: top center;
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+h2 {
+  border-bottom: 2px solid #ddd;
+  margin-top: 40px;
+  padding-bottom: 5px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.keywords ul {
+  list-style-position: inside;
+  padding: 0;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.keywords li {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 4px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="menu">
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="courses.html">Courses</a>
+  <a href="publications.html">Publications</a>
+</div>
+
+<div class="container">
+
 <div class="sidebar">
 <img src="profile.jpg">
 
@@ -25,21 +168,59 @@
 <a href="https://research.hacettepe.edu.tr/en/persons/duygu-içen-11/"><i class="fas fa-user-graduate"></i></a>
 </div>
 
-<!-- Visitor Map -->
+<!-- Visitor Globe -->
 <div class="visitor-box">
-  <h3 style="font-weight:500; color:#777;">Visitor Map</h3>
+  <h3>Visitor Globe</h3>
 
-  <div style="
-    transform: scale(0.6);
-    transform-origin: top center;
-    background:#fafafa;
-    padding:10px;
-    border-radius:8px;
-  ">
-    <script type="text/javascript" id="clustrmaps"
-      src="//clustrmaps.com/map_v2.js?d=pdHrrZzgGyygVP3Y7Rnz8TEPI6i_FM-qGqm-IDEHA00&cl=ffffff&w=a">
+  <div class="globe-wrapper">
+    <script type="text/javascript" id="clstr_globe"
+      src="//clustrmaps.com/globe.js?d=pdHrrZzgGyygVP3Y7Rnz8TEPI6i_FM-qGqm-IDEHA00">
     </script>
   </div>
 </div>
 
 </div>
+
+<div class="content">
+
+<h2>About Me</h2>
+
+<p>
+I am a statistician and academic researcher working at the intersection of data mining, multivariate data analysis, and big data analytics. 
+My research focuses on regression trees, fuzzy regression modeling, and machine learning methods, 
+with an emphasis on developing interpretable and robust approaches for complex real-world data.
+</p>
+
+<p>
+Since 2018, I teach undergraduate and postgraduate courses in these areas, combining theoretical foundations with practical applications. 
+I am particularly interested in research collaborations that integrate applied statistics, machine learning, and interdisciplinary problem solving.
+</p>
+
+<p>
+Beyond academia, I have a strong interest in sailing and regularly participate in national and international races.
+</p>
+
+<h2>Research Interests</h2>
+<ul>
+<li>Fuzzy Regression</li>
+<li>Regression Trees</li>
+<li>Machine Learning</li>
+<li>Data Mining</li>
+</ul>
+
+<h2 id="contact">Contact</h2>
+<p>
+Hacettepe University,<br>
+Department of Statistics,<br>
+06800, Beytepe<br>
+📍 Ankara, Türkiye<br>
+📧 duyguicn@hacettepe.edu.tr<br>
+📧 duyguicen@gmail.com
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
